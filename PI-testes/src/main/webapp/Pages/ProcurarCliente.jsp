@@ -20,7 +20,7 @@
     <form method="post">
         <div class="application-container">
 		<div class="form-container">
-                    <<form method="post" action="${pageContext.request.contextPath}/procurarCliente">
+                    <form method="post" action="${pageContext.request.contextPath}/procurarCliente">
 			<div class="form-header">Procurar Cliente</div>
 			<div class="form-content">
                         <div class="form-block-row">

@@ -1,6 +1,8 @@
 body {
 	background-color: #f3f3f3;
-}
+         background-image: url("formbg.jpg"); 
+        background-size: cover;
+    }
 
 .application-container {
 	display: flex;
