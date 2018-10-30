@@ -17,10 +17,10 @@
    <div><jsp:include page="navbar.jsp"/></div> 
 </nav>
 <body>
-    <form method="post">
+    <form method="post" action="${pageContext.request.contextPath}/ProcurarCliente">
         <div class="application-container">
 		<div class="form-container">
-                    <form method="post" action="${pageContext.request.contextPath}/procurarCliente">
+                    <form action = "ProcurarClientes" method = "GET">
 			<div class="form-header">Procurar Cliente</div>
 			<div class="form-content">
                         <div class="form-block-row">
@@ -30,7 +30,7 @@
                             </div>
                             <div>
                               <label>CPF:</label>
-                              <input type="text" name="cpf">
+                              <input type="text" name="DatadeNascimento">
                             </div>
                             </div>
   			</div>
@@ -40,6 +40,8 @@
                     </form>
                 </div>
 	</div>
+    
     </form>
+        
 </body>
 </html>

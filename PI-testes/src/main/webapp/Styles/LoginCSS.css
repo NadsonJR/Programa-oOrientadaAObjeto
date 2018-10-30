@@ -1,0 +1,39 @@
+body{
+            background-image: url("Fundo.jpg");
+            background-size: cover;
+            display: flex;
+            height: 97vh;
+        }
+        #loginForm{
+            background-color: rgba(0,0,0,0.3);/* pinta o fundo de cinza*/
+            width: 20%;
+            margin: auto;
+            font-family: sans-serif;
+            padding: 7px;
+            border-radius: 10px;
+        }
+        #loginForm h1{
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+        #loginForm div{
+            text-align: center;
+            
+        }
+        #loginForm input{
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        #loginForm button{
+            width: 90%;
+            background-color: #4242ff;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #loginForm img{
+            width: 200px;
+        }
