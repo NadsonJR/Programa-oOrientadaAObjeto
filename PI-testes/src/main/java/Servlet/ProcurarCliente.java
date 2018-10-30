@@ -4,11 +4,10 @@
  * and open the template in the editor.
  */
 package Servlet;
-
 import DAO.ClienteDAO;
 import Model.Cliente;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,22 +17,25 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author nadso
+ * @author matheus.fboliveira
  */
-@WebServlet(name = "FormularioInserirCliente", urlPatterns = {"/incluirCliente"})
-public class FormularioInserirCliente extends HttpServlet {
-
-   @Override
+@WebServlet(name = "ProcurarCliente", urlPatterns = {"/procurarCliente"})
+public class ProcurarCliente extends HttpServlet{
+    
+    @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher
-                = request.getRequestDispatcher("/Pages/CadastroCliente.jsp");
+         
+              
+            RequestDispatcher dispatcher
+                = request.getRequestDispatcher("/Pages/ProcurarCliente.jsp");
         dispatcher.forward(request, response);
     }
 
-    @Override
-    protected void doPost(HttpServletRequest request,
+
+ @Override
+   protected void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -58,7 +60,7 @@ public class FormularioInserirCliente extends HttpServlet {
         Cliente c = new Cliente(nome,sexo,datanascimento,cpf,rg,estadocivil,cep,logradouro,numero,complemento,cidade,bairro,estado,telefone,celular,email,numhab);
         try {
 
-            ClienteDAO.inserir(c);
+           ClienteDAO.procurar(nome);
 
         } catch (Exception e) {
 
@@ -68,7 +70,7 @@ public class FormularioInserirCliente extends HttpServlet {
 
         RequestDispatcher dispatcher
                 = request.getRequestDispatcher(
-                        "/Pages/CadastroCliente.jsp");
+                        "/Pages/resultadoProcurar.jsp");
         dispatcher.forward(request, response);
 
     }

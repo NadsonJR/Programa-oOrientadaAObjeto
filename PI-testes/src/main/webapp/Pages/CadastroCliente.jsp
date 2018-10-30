@@ -5,12 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page session="false" %>
+<%@page session="true" %>
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../Styles\Login.css">
-	<link rel="stylesheet" type="text/css" href="../Styles\Cadastros.css">
+	<link rel="stylesheet" type="text/css" href="Styles/Login.css">
+	<link rel="stylesheet" type="text/css" href="Styles/Cadastros.css">
 	<meta charset="utf-8">
 	<title>Cadastro de clientes</title>
 </head>
@@ -100,7 +100,7 @@
                             <button type="submit">Salvar</button>
   			</div>
                     </form>
-		</div>
+                </div>
 	</div>
     </form>
 </body>
