@@ -12,32 +12,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Editar</title>
     </head>
-    <style>
-        #Result{
-            font-family: sans-serif;
-            color: black;
-            width: 80%;
-            margin: auto;
-            padding: 7px;
-            background-color: rgba(0,0,0,0.1);
-            align-items: center;
-        }
-        #Result input{
-            padding: 7px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        h1{
-            text-align: center;
-            
-        }
-        button{
-            background: #4242ff;
-            width: 30%;
-            padding: 15px;
-            border-radius: 8px;
-        }
-    </style>
     <body><form method="post">
         <div class="application-container">
 		<div class="form-container">

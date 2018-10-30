@@ -18,7 +18,7 @@
    <div><jsp:include page="navbar.jsp"/></div> 
 </nav>
 <body>
-    <form method="post">
+    <form method="post" action="${pageContext.request.contextPath}/incluirCliente">
         <div class="application-container">
 		<div class="form-container">
                     <form action = "CadastroClientes" method = "GET">
