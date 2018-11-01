@@ -12,6 +12,9 @@ body{
             padding: 7px;
             border-radius: 10px;
         }
+        #loginForm:hover{
+           box-shadow: 0 0 120px rgb(255,255,255);
+        }
         #loginForm h1{
             text-align: center;
             color: white;
@@ -29,11 +32,19 @@ body{
         }
         #loginForm button{
             width: 90%;
-            background-color: #4242ff;
+            background-color: black;
             color: white;
             padding: 5px;
             border-radius: 5px;
         }
+        #loginForm button:hover {
+	background-color: green;
+	color: white;
+}
+       #loginForm button:active {
+	background-color: red;
+	color: white;
+}
         #loginForm img{
             width: 200px;
         }

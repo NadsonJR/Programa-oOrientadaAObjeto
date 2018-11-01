@@ -10,7 +10,10 @@ body {
 	align-items: center;
 	height: 100vh;
 }
-
+#carImg{
+    width: 250px;
+    height: 250px;
+}
 .inputs-container{
 	width: 100%;
 }

@@ -17,7 +17,7 @@
    <div><jsp:include page="navbar.jsp"/></div> 
 </nav>
 <body>
-    <form method="post" action="${pageContext.request.contextPath}/ProcurarCliente">
+    <form method="post" action="${pageContext.request.contextPath}/resultadoProcurar">
         <div class="application-container">
 		<div class="form-container">
                     <form action = "ProcurarClientes" method = "GET">

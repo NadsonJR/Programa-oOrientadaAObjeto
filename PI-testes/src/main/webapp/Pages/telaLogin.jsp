@@ -11,6 +11,7 @@
         
     <body >
         <div id="loginForm">
+        <div >
             
         <div>
             <h1>Log-in</h1>
@@ -26,6 +27,7 @@
             <button>Login</button>
                 
         </div>
-       </div>     
+       </div>
+       </div>    
     </body>
 </html>
